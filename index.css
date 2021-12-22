@@ -1,5 +1,8 @@
 #contentLoader {
     background-color: brown;
-    height: 100%;
-    margin: 15px;
+    height: 95%;
+    width: 100%;
+}
+.menuElement{
+    margin-left: 20px;
 }
