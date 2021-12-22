@@ -39,6 +39,7 @@ function generateRandomCoordinatesForEnemy() {
 
 function spawnEnemies() {
   setInterval(() => {
+    if(stopGame) return;
     coordinates = generateRandomCoordinatesForEnemy();
     const angle = Math.atan2(middleY - coordinates.y, middleX - coordinates.x);
     const velocity = {

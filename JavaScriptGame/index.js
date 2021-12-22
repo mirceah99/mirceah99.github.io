@@ -1,6 +1,21 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
+//start game
+//music 
+var audio = document.getElementById('music');
+var playButton  = document.getElementById("play");
+
+var stopGame = true;
+
+playButton.onclick = function (){
+  audio.play();
+  console.log('yay music');
+  stopGame = false;
+  playButton.remove();
+}
+
+
 canvas.width = innerWidth;
 canvas.height = innerHeight;
 let mouseX = 0;
@@ -19,18 +34,6 @@ let enemies = [];
 let projectiles = [];
 let projectileRadius = 10;
 
-//music 
-var audio = document.getElementById('music');
-
-var playButton  = document.getElementById("play");
-
-playButton.onclick = function (){
-  audio.play();
-  console.log('yay music');
-}
-
-
-
 
 // create player
 const player = new Player(middleX, middleY, 30, "red");
@@ -38,8 +41,8 @@ const player = new Player(middleX, middleY, 30, "red");
 document.addEventListener("mousemove", onMouseUpdate, true);
 
 // shoot projectiles
-
-setInterval(() => {
+projectilesFunction = function (){
+  if(stopGame) return;
   const angle = Math.atan2(mouseY - middleY, mouseX - middleX);
   const velocity = {
     x: Math.cos(angle),
@@ -48,7 +51,8 @@ setInterval(() => {
   projectiles.push(
     new Projectile(middleX, middleY, projectileRadius, "red", velocity)
   );
-}, timeBetweenTwoProjectiles);
+};
+let projectilesInterval = setInterval(projectilesFunction, timeBetweenTwoProjectiles);
 
 //load enemies
 spawnEnemies();
@@ -56,6 +60,7 @@ spawnEnemies();
 // load frames
 
 const loadFrames = setInterval(() => {
+  if(stopGame) return;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   draw(player, enemies, projectiles);
@@ -74,11 +79,11 @@ function logKey(e) {
     userText = "";
     lastKeyTime = new Date();
   } else lastKeyTime = new Date();
-  console.log(e.key);
   userText = userText + e.key;
-  console.log(userText);
   if (userText === secret) {
-    timeBetweenTwoProjectiles = Math.floor(timeBetweenTwoProjectiles / 10);
+    if (timeBetweenTwoProjectiles>1) timeBetweenTwoProjectiles = Math.floor(timeBetweenTwoProjectiles / 10);
+    clearInterval(projectilesInterval);
+    projectilesInterval = setInterval(projectilesFunction, timeBetweenTwoProjectiles);
     alert(`cheats on! ${timeBetweenTwoProjectiles}`);
   }
 }

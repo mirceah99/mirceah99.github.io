@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+   
   </head>
 <style>
   body {
     margin: 0;
   }
+  .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #FFFF00;
+    padding: 10px;
+    }
 </style>
 <body>
-  <button id="play">PLAY</button>
+  <button class="center" id="play">Play</button>
 <canvas></canvas>
 <audio src= "./Media/Audio/music.mp3" id= "music" loop ="loop" autoplay="autoplay" type="audio/mpeg"></audio>
 <script src="./player.js"></script>
