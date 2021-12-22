@@ -1,11 +1,11 @@
 async function  loadHtml(divId, htmlFile){
     let xHttp;
     const divElement = document.getElementById(divId);
-    console.log('window.location', window.location);
-    let oldUrl = window.location.toString();
-    console.log('oldUrl', oldUrl);
-    let url = oldUrl.replace('index.html', htmlFile);
-    console.log('url', url);
+    // console.log('window.location', window.location);
+    // let oldUrl = window.location.toString();
+    // console.log('oldUrl', oldUrl);
+    // let url = oldUrl.replace('index.html', htmlFile);
+    // console.log('url', url);
     if ( htmlFile ){
         xHttp = await new XMLHttpRequest();
         xHttp.onreadystatechange = function () {
@@ -17,7 +17,7 @@ async function  loadHtml(divId, htmlFile){
             }
         }
     }
-    xHttp.open('GET', url.toString(), true);
+    xHttp.open('GET', htmlFile, true);
     xHttp.send();
     return;
 }
