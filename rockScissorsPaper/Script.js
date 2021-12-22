@@ -70,7 +70,6 @@ const game = ()=>
 		const computerScore = document.querySelector('.computer-score p');
 		playerScore.textContent = pScore.toString();
 		computerScore.textContent = cScore.toString();
-		console.log(pScore);
 
 	};
 
@@ -99,7 +98,7 @@ const game = ()=>
 				{ winner.textContent = 'You lose!'
 					cScore++;
 					return;}
-			if ( computerChoice =='paper')
+			if ( computerChoice =='rock')
 				{ winner.textContent = 'You won!'
 					pScore++;
 					return;}
