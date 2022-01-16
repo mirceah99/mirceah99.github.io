@@ -1,0 +1,162 @@
+xmlText =`<proiect>
+<moneda>
+    <nume>btc</nume>
+    <valoare_usd>54865</valoare_usd>
+    <dominanta>41.6</dominanta>
+    <market_cap>1036000000000</market_cap>
+    <crestere_astazi_usd>0.89</crestere_astazi_usd>
+</moneda>
+<moneda>
+    <nume>eth</nume>
+    <valoare_usd>4135</valoare_usd>
+    <dominanta>19.64</dominanta>
+    <market_cap>490000000000</market_cap>
+    <crestere_astazi_usd>1.38</crestere_astazi_usd>
+</moneda>
+<moneda>
+    <nume>bnb</nume>
+    <valoare_usd>609</valoare_usd>
+    <dominanta>4.08</dominanta>
+    <market_cap>101000000000</market_cap>
+    <crestere_astazi_usd>3.9</crestere_astazi_usd>
+</moneda>
+<moneda>
+    <nume>cro</nume>
+    <valoare_usd>0.789</valoare_usd>
+    <dominanta>0.8</dominanta>
+    <market_cap>19000000000</market_cap>
+    <crestere_astazi_usd>10.26</crestere_astazi_usd>
+</moneda>
+<moneda>
+    <nume>egld</nume>
+    <valoare_usd>426.23</valoare_usd>
+    <dominanta>41.6</dominanta>
+    <market_cap>1036000000000</market_cap>
+    <crestere_astazi_usd>0.23</crestere_astazi_usd>
+</moneda>
+<detine>
+    <nume>mircea</nume>
+    <moneda>cro</moneda>
+    <cantitate>1800</cantitate>
+</detine>
+<detine>
+    <nume>mircea</nume>
+    <moneda>eth</moneda>
+    <cantitate>0.25</cantitate>
+</detine>
+<detine>
+    <nume>mircea</nume>
+    <moneda>egld</moneda>
+    <cantitate>1.25</cantitate>
+</detine>
+<detine>
+    <nume>george</nume>
+    <moneda>btc</moneda>
+    <cantitate>0.5</cantitate>
+</detine>
+<detine>
+    <nume>george</nume>
+    <moneda>eth</moneda>
+    <cantitate>0.15</cantitate>
+</detine>
+<detine>
+    <nume>george</nume>
+    <moneda>bnb</moneda>
+    <cantitate>2.15</cantitate>
+</detine>
+<detine>
+    <nume>ana</nume>
+    <moneda>cro</moneda>
+    <cantitate>150</cantitate>
+</detine>
+<detine>
+    <nume>ana</nume>
+    <moneda>cro</moneda>
+    <cantitate>150</cantitate>
+</detine>
+<detine>
+    <nume>ana</nume>
+    <moneda>eth</moneda>
+    <cantitate>0.15</cantitate>
+</detine>
+<detine>
+    <nume>ana</nume>
+    <moneda>bnb</moneda>
+    <cantitate>4.15</cantitate>
+</detine>
+<detine>
+    <nume>ana</nume>
+    <moneda>btc</moneda>
+    <cantitate>0.55</cantitate>
+</detine>
+<exchage>
+    <nume>coinbase</nume>
+    <moneda>btc</moneda>
+    <taxa>2.5</taxa>
+</exchage>
+<exchage>
+    <nume>coinbase</nume>
+    <moneda>eth</moneda>
+    <taxa>1.5</taxa>
+</exchage>
+<exchage>
+    <nume>coinbase</nume>
+    <moneda>cro</moneda>
+    <taxa>1.5</taxa>
+</exchage>
+<exchage>
+    <nume>coinbase</nume>
+    <moneda>bnb</moneda>
+    <taxa>3.5</taxa>
+</exchage>
+<exchage>
+    <nume>coinbase</nume>
+    <moneda>egld</moneda>
+    <taxa>1</taxa>
+</exchage>
+<exchage>
+    <nume>binance</nume>
+    <moneda>btc</moneda>
+    <taxa>1.5</taxa>
+</exchage>
+<exchage>
+    <nume>binance</nume>
+    <moneda>eth</moneda>
+    <taxa>2.5</taxa>
+</exchage>
+<exchage>
+    <nume>binance</nume>
+    <moneda>cro</moneda>
+    <taxa>0.5</taxa>
+</exchage>
+<exchage>
+    <nume>binance</nume>
+    <moneda>bnb</moneda>
+    <taxa>0</taxa>
+</exchage>
+<exchage>
+    <nume>binance</nume>
+    <moneda>egld</moneda>
+    <taxa>1.5</taxa>
+</exchage>
+<dobanda>
+    <numeMoneda>cro</numeMoneda>
+    <APR>15</APR>
+</dobanda>
+<dobanda>
+    <numeMoneda>eth</numeMoneda>
+    <APR>2.5</APR>
+</dobanda>
+<dobanda>
+    <numeMoneda>egld</numeMoneda>
+    <APR>60</APR>
+</dobanda>
+<dobanda>
+    <numeMoneda>bnb</numeMoneda>
+    <APR>5</APR>
+</dobanda>
+<dobanda>
+    <numeMoneda>btc</numeMoneda>
+    <APR>0.55</APR>
+</dobanda>
+</proiect>`
