@@ -159,4 +159,30 @@
     <numeMoneda>btc</numeMoneda>
     <APR>0.55</APR>
 </dobanda>
+<reguli>
+    <if>
+        <ce>cripto moneda</ce>
+        <relatie>detine</relatie>
+        <persona>x</persona>
+    </if>
+    <then>
+        <pers>x</pers>
+        <relatie>este</relatie>
+        <ce>investitor</ce>
+    </then>
+    <if>
+        <cine>x</cine>
+        <relatie>detine</relatie>
+        <ce>cro</ce>
+    </if>
+    <then>
+        <cine>x</cine>
+        <relatie>este</relatie>
+        <client>crypto.com</client>
+    </then>
+    
+</reguli>
+
+
+
 </proiect>
