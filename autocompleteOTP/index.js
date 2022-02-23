@@ -1,4 +1,5 @@
 try{
+    if('OTPCredential' in window){
 const p = document.getElementById("your-code");
 navigator.credentials.get({
     otp: {transport:['sms']},
@@ -12,4 +13,6 @@ navigator.credentials.get({
     p.value = otp.code;
 }).catch(e =>{
     p.value = e;
-})} catch(e) { alert(JSON.stringify(e));}
+})
+    } else {alert("not possible");}
+} catch(e) { alert(JSON.stringify(e));}
