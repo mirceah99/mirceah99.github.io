@@ -5,6 +5,8 @@ navigator.credentials.get({
     signal: (new AbortController()).signal
 }).then( otp => {
     alert('then');
+    alert (p);
+    alert(JSON.stringify(otp));
     p.value = otp.code;
 }).catch(e =>{
     p.value = e;
