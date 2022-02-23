@@ -16,6 +16,14 @@
 // })
 //     } else {alert("not possible");}
 // } catch(e) { alert(JSON.stringify(e));}
+
+if (!window.OTPCredential) {
+    // feature not available
+    alert('feature NOT available');
+  } else {
+    alert('feature available');
+  }
+  
 navigator.credentials.get({
     otp: {
       transport: ["sms"]
