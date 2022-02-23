@@ -1,5 +1,5 @@
 try{
-    if('OTPCredential' in window){
+    if(window.OTPCredential){
 const p = document.getElementById("your-code");
 navigator.credentials.get({
     otp: {transport:['sms']},
