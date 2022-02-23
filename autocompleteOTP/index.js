@@ -5,7 +5,7 @@ navigator.credentials.get({
     signal: (new AbortController()).signal
 }).then( otp => {
     alert('then');
-    alert (p);
+    alert (document.getElementById("your-code"));
     alert(JSON.stringify(otp));
     p.value = otp.code;
 }).catch(e =>{
